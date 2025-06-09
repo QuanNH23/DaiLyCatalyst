@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cảm nhận về Bộ Bài Động Lực</title>
+    <link rel="stylesheet" href="~/css/HealMeVer2 - Feedbacks.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🃏 Bộ Bài Động Lực</h1>
+            <p>Chia sẻ cảm nhận và trải nghiệm của bạn</p>
+        </div>
+
+       
+
+        <div class="main-content">
+            <div class="feedback-section">
+                <h2 class="section-title">Cảm nhận từ người dùng</h2>
+                <div class="loading" id="loadingFeedbacks">
+                    <p>⏳ Đang tải cảm nhận...</p>
+                </div>
+                <div id="feedbackList">
+                    <div class="no-feedback">
+                        Chưa có cảm nhận nào. Hãy là người đầu tiên chia sẻ!
+                    </div>
+                </div>
+            </div>
+
+            <div class="add-feedback">
+                <h2 class="section-title">Chia sẻ cảm nhận</h2>
+                <div class="success-message" id="successMessage">
+                    Cảm ơn bạn đã chia sẻ! Cảm nhận của bạn đã được thêm thành công.
+                </div>
+                <div class="error-message" id="errorMessage">
+                    Có lỗi xảy ra. Vui lòng thử lại sau!
+                </div>
+                <form id="feedbackForm" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="userName">Tên của bạn</label>
+                        <input type="text" id="userName" required placeholder="Nhập tên của bạn">
+                    </div>
+                    <div class="form-group">
+                        <label>Đánh giá sản phẩm</label>
+                        <div class="rating-input">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5">⭐</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4">⭐</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3">⭐</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2">⭐</label>
+                            <input type="radio" id="star1" name="rating" value="1" required>
+                            <label for="star1">⭐</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedbackText">Cảm nhận của bạn</label>
+                        <textarea id="feedbackText" required placeholder="Chia sẻ trải nghiệm và cảm nhận của bạn về bộ bài động lực..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedbackImage">Hình ảnh (tùy chọn)</label>
+                        <div class="file-upload">
+                            <input type="file" id="feedbackImage" accept="image/*">
+                            <label for="feedbackImage" class="file-upload-label">
+                                📷 Chọn hình ảnh hoặc kéo thả vào đây
+                            </label>
+                        </div>
+                        <div class="file-preview" id="imagePreview"></div>
+                    </div>
+                    <button type="submit" class="submit-btn" id="submitBtn">Chia sẻ cảm nhận</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // API Base URL - Thay đổi theo domain của bạn
+        const API_BASE_URL = 'https://localhost:7239/api';
+
+        // Biến global
+        let feedbacks = [];
+
+        // Khởi tạo khi trang load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadFeedbacks();
+            setupEventListeners();
+        });
+
+        // Tải danh sách cảm nhận từ API
+        async function loadFeedbacks() {
+            try {
+                showLoading(true);
+                const response = await fetch(`${API_BASE_URL}/feedbacks`);
+                if (response.ok) {
+                    feedbacks = await response.json();
+                    renderFeedbacks();
+                    updateStats();
+                } else {
+                    console.error('Lỗi khi tải cảm nhận:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Lỗi kết nối:', error);
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        // Hiển thị/ẩn loading
+        function showLoading(show) {
+            const loading = document.getElementById('loadingFeedbacks');
+            const feedbackList = document.getElementById('feedbackList');
+            
+            if (show) {
+                loading.style.display = 'block';
+                feedbackList.style.display = 'none';
+            } else {
+                loading.style.display = 'none';
+                feedbackList.style.display = 'block';
+            }
+        }
+
+        // Render danh sách cảm nhận
+        function renderFeedbacks() {
+            const feedbackList = document.getElementById('feedbackList');
+            
+            if (feedbacks.length === 0) {
+                feedbackList.innerHTML = '<div class="no-feedback">Chưa có cảm nhận nào. Hãy là người đầu tiên chia sẻ!</div>';
+                return;
+            }
+            console.log("Feedbacks:", feedbacks);
+
+            feedbacks.forEach((fb, i) => {
+                console.log(`Feedback ${i}:`, fb);
+                if (!fb.UserName) {
+                    console.warn(`⚠️ Thiếu UserName ở feedback ${i}`);
+                }
+            });
+            feedbackList.innerHTML = feedbacks.map(feedback => `
+                <div class="feedback-item">
+                    <div class="feedback-header">
+                        <div class="user-info">
+                            <div class="avatar">${feedback.userName.charAt(0).toUpperCase()}</div>
+                            <span class="user-name">${feedback.userName}</span>
+                        </div>
+                        <div class="rating">
+                            ${'⭐'.repeat(feedback.rating)}
+                        </div>
+                    </div>
+                    <div class="feedback-text">${feedback.feedbackText}</div>
+                    ${feedback.imageUrl ? `
+                        <div class="feedback-image">
+                            <img src="${feedback.imageUrl}" alt="Hình ảnh cảm nhận" loading="lazy">
+                        </div>
+                    ` : ''}
+                    <div class="feedback-date">${formatDate(feedback.createdAt)}</div>
+                </div>
+            `).join('');
+        }
+
+        // Cập nhật thống kê
+        function updateStats() {
+            const totalFeedback = feedbacks.length;
+            const avgRating = totalFeedback > 0 ? (feedbacks.reduce((sum, f) => sum + f.Rating, 0) / totalFeedback).toFixed(1) : 0;
+            const recommendPercent = totalFeedback > 0 ? Math.round((feedbacks.filter(f => f.Rating >= 4).length / totalFeedback) * 100) : 0;
+
+            document.getElementById('totalFeedback').textContent = totalFeedback;
+            document.getElementById('avgRating').textContent = avgRating;
+            document.getElementById('recommendPercent').textContent = recommendPercent + '%';
+        }
+
+        // Format ngày tháng
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('vi-VN', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit'
+            });
+        }
+
+        // Thiết lập event listeners
+        function setupEventListeners() {
+            // Form submit
+            document.getElementById('feedbackForm').addEventListener('submit', handleFormSubmit);
+            
+            // File upload preview
+            document.getElementById('feedbackImage').addEventListener('change', handleImagePreview);
+            
+            // Rating stars
+            setupRatingStars();
+        }
+
+        // Xử lý submit form
+        async function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submitBtn');
+            const formData = new FormData();
+            
+            // Validate form
+            const name = document.getElementById('userName').value.trim();
+            const rating = document.querySelector('input[name="rating"]:checked')?.value;
+            const text = document.getElementById('feedbackText').value.trim();
+            const imageFile = document.getElementById('feedbackImage').files[0];
+            
+            if (!name || !rating || !text) {
+                showMessage('Vui lòng điền đầy đủ thông tin!', 'error');
+                return;
+            }
+            
+            // Tạo FormData
+            formData.append('UserName', name);
+            formData.append('Rating', rating);
+            formData.append('FeedbackText', text);
+            if (imageFile) {
+                formData.append('ImageFile', imageFile);
+            }
+            
+            try {
+                // Disable submit button
+                submitBtn.disabled = true;
+                submitBtn.textContent = 'Đang gửi...';
+                
+                const response = await fetch(`${API_BASE_URL}/feedbacks`, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    showMessage('Cảm ơn bạn đã chia sẻ! Cảm nhận của bạn đã được thêm thành công.', 'success');
+                    document.getElementById('feedbackForm').reset();
+                    document.getElementById('imagePreview').innerHTML = '';
+                    loadFeedbacks(); // Reload feedbacks
+                } else {
+                    const errorData = await response.json();
+                    showMessage(errorData.message || 'Có lỗi xảy ra khi gửi cảm nhận!', 'error');
+                }
+            } catch (error) {
+                console.error('Lỗi khi gửi cảm nhận:', error);
+                showMessage('Có lỗi kết nối. Vui lòng thử lại sau!', 'error');
+            } finally {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Chia sẻ cảm nhận';
+            }
+        }
+
+        // Xử lý preview ảnh
+        function handleImagePreview(e) {
+            const file = e.target.files[0];
+            const preview = document.getElementById('imagePreview');
+            
+            if (file) {
+                // Validate file type
+                if (!file.type.startsWith('image/')) {
+                    showMessage('Vui lòng chọn file hình ảnh!', 'error');
+                    e.target.value = '';
+                    return;
+                }
+                
+                // Validate file size (max 5MB)
+                if (file.size > 5 * 1024 * 1024) {
+                    showMessage('Kích thước file quá lớn. Vui lòng chọn file nhỏ hơn 5MB!', 'error');
+                    e.target.value = '';
+                    return;
+                }
+                
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.innerHTML = `<img src="${e.target.result}" alt="Preview">`;
+                };
+                reader.readAsDataURL(file);
+            } else {
+                preview.innerHTML = '';
+            }
+        }
+
+        // Thiết lập rating stars
+        function setupRatingStars() {
+            const ratingInputs = document.querySelectorAll('.rating-input input[type="radio"]');
+            const ratingLabels = document.querySelectorAll('.rating-input label');
+
+            ratingLabels.forEach((label, index) => {
+                label.addEventListener('mouseover', function() {
+                    ratingLabels.forEach((l, i) => {
+                        if (i >= index) {
+                            l.style.color = '#ffd700';
+                        } else {
+                            l.style.color = 'rgba(255,255,255,0.5)';
+                        }
+                    });
+                });
+            });
+
+            document.querySelector('.rating-input').addEventListener('mouseleave', function() {
+                const checked = document.querySelector('input[name="rating"]:checked');
+                ratingLabels.forEach((label, index) => {
+                    if (checked && index >= Array.from(ratingInputs).indexOf(checked)) {
+                        label.style.color = '#ffd700';
+                    } else {
+                        label.style.color = 'rgba(255,255,255,0.5)';
+                    }
+                });
+            });
+        }
+
+        // Hiển thị thông báo
+        function showMessage(message, type) {
+            const successElement = document.getElementById('successMessage');
+            const errorElement = document.getElementById('errorMessage');
+            
+            // Hide all messages first
+            successElement.style.display = 'none';
+            errorElement.style.display = 'none';
+            
+            if (type === 'success') {
+                successElement.textContent = message;
+                successElement.style.display = 'block';
+                setTimeout(() => {
+                    successElement.style.display = 'none';
+                }, 5000);
+            } else {
+                errorElement.textContent = message;
+                errorElement.style.display = 'block';
+                setTimeout(() => {
+                    errorElement.style.display = 'none';
+                }, 5000);
+            }
+        }
+    </script>
+</body>
+</html>

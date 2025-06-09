@@ -1,0 +1,217 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\PRN232\\HealMeVer2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|d:\\prn232\\healmever2\\healme\\views\\buypagehealme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\buypagehealme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|d:\\prn232\\healmever2\\healme\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|d:\\prn232\\healmever2\\healme\\wwwroot\\css\\healmever2 - buy.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\wwwroot\\css\\healmever2 - buy.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\wwwroot\\css\\healmever2 - homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\wwwroot\\css\\healmever2 - homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\services\\feedbackservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\views\\feedbacks\\healmefeedbackver2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\feedbacks\\healmefeedbackver2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\wwwroot\\css\\healmever2 - feedbacks.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\wwwroot\\css\\healmever2 - feedbacks.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\controllers\\feedbackcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|D:\\PRN232\\HealMeVer2\\healme\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HealMeVer2 - Buy.css",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\wwwroot\\css\\HealMeVer2 - Buy.css",
+              "RelativeDocumentMoniker": "HealMe\\wwwroot\\css\\HealMeVer2 - Buy.css",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\wwwroot\\css\\HealMeVer2 - Buy.css",
+              "RelativeToolTip": "HealMe\\wwwroot\\css\\HealMeVer2 - Buy.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-09T10:17:54.67Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BuyPageHealMe.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\BuyPageHealMe.cshtml",
+              "RelativeDocumentMoniker": "HealMe\\Views\\BuyPageHealMe.cshtml",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\BuyPageHealMe.cshtml",
+              "RelativeToolTip": "HealMe\\Views\\BuyPageHealMe.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-09T10:17:21.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomePage.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\Home\\HomePage.cshtml",
+              "RelativeDocumentMoniker": "HealMe\\Views\\Home\\HomePage.cshtml",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\Home\\HomePage.cshtml",
+              "RelativeToolTip": "HealMe\\Views\\Home\\HomePage.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T14:55:36.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "HealMe\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "HealMe\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T09:28:37.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FeedbackService.cs",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Services\\FeedbackService.cs",
+              "RelativeDocumentMoniker": "HealMe\\Services\\FeedbackService.cs",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Services\\FeedbackService.cs",
+              "RelativeToolTip": "HealMe\\Services\\FeedbackService.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAnwCMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T15:27:28.561Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "HealMe\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "HealMe\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAQwBUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:55:17.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HealMeVer2 - HomePage.css",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\wwwroot\\css\\HealMeVer2 - HomePage.css",
+              "RelativeDocumentMoniker": "HealMe\\wwwroot\\css\\HealMeVer2 - HomePage.css",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\wwwroot\\css\\HealMeVer2 - HomePage.css",
+              "RelativeToolTip": "HealMe\\wwwroot\\css\\HealMeVer2 - HomePage.css",
+              "ViewState": "AQIAAI8BAAAAAAAAAAAswKsBAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-08T09:45:13.013Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Program.cs",
+              "RelativeDocumentMoniker": "HealMe\\Program.cs",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Program.cs",
+              "RelativeToolTip": "HealMe\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAgwCUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T15:04:05.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FeedbackController.cs",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Controllers\\FeedbackController.cs",
+              "RelativeDocumentMoniker": "HealMe\\Controllers\\FeedbackController.cs",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Controllers\\FeedbackController.cs",
+              "RelativeToolTip": "HealMe\\Controllers\\FeedbackController.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAASwBIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T14:56:05.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HealMeFeedbackVer2.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
+              "RelativeDocumentMoniker": "HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
+              "RelativeToolTip": "HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-06T14:55:49.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "HealMe\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "HealMe\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-07T09:28:26.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HealMeVer2 - Feedbacks.css",
+              "DocumentMoniker": "D:\\PRN232\\HealMeVer2\\HealMe\\wwwroot\\css\\HealMeVer2 - Feedbacks.css",
+              "RelativeDocumentMoniker": "HealMe\\wwwroot\\css\\HealMeVer2 - Feedbacks.css",
+              "ToolTip": "D:\\PRN232\\HealMeVer2\\HealMe\\wwwroot\\css\\HealMeVer2 - Feedbacks.css",
+              "RelativeToolTip": "HealMe\\wwwroot\\css\\HealMeVer2 - Feedbacks.css",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAADUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-06T15:31:23.226Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

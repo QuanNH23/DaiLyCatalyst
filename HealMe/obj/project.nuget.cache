@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5impws496HkmipX99JKnBegmeSy1rVUOV8IVeatq8jjCpR6+sIDBN4S/twhuNsqpZZ3xQQVyfQIj4/Uf3CV9Gw==",
+  "dgSpecHash": "G/lO1yOmLDiBYoDcqbxHKPMWu6s4rXkuavo5fPPYLoMlJN5N+/jtidxBUn5WM9KGVsjM9+JHMOpraWO73Vc0bg==",
   "success": true,
-  "projectFilePath": "D:\\PRN232\\HealMeVer2\\HealMe\\HealMe.csproj",
+  "projectFilePath": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\HealMe.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thanh\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Thanh\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

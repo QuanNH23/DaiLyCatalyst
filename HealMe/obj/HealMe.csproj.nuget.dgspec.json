@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PRN232\\HealMeVer2\\HealMe\\HealMe.csproj": {}
+    "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\HealMe.csproj": {}
   },
   "projects": {
-    "D:\\PRN232\\HealMeVer2\\HealMe\\HealMe.csproj": {
+    "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\HealMe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRN232\\HealMeVer2\\HealMe\\HealMe.csproj",
+        "projectUniqueName": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\HealMe.csproj",
         "projectName": "HealMe",
-        "projectPath": "D:\\PRN232\\HealMeVer2\\HealMe\\HealMe.csproj",
+        "projectPath": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\HealMe.csproj",
         "packagesPath": "C:\\Users\\Thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\PRN232\\HealMeVer2\\HealMe\\obj\\",
+        "outputPath": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Thanh\\AppData\\Roaming\\NuGet\\NuGet.Config",

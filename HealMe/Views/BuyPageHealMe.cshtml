@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
@@ -7,13 +8,29 @@
     <link rel="stylesheet" href="~/css/HealMeVer2 - Buy.css" />
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">Daily Catalyst
-                <img src="~/images/MeoMeoLogo.png" alt="Daily Catalyst Logo" style="width: 100px; height: 100px; vertical-align: middle;">
+    <header>
+        <nav class="container">
+            <div>
+
+                <a style="text-decoration:none; color:none" href="/Home">
+                    <div class="logo">
+                        Daily Catalyst
+
+                    </div>
+                </a>
+
             </div>
-            <div class="tagline">Khơi nguồn động lực mỗi ngày</div>
-        </header>
+
+            <ul class="nav-links">
+                <li><a href="/Task">Nhiệm vụ của bạn</a></li>
+                <li><a href="/Home/BuyNow">Mua ngay</a></li>
+                <li><a href="/Home/Feedback">Cảm nhận của mọi người</a></li>
+                <li><a href="/Authentication/Login">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
 
         <div class="product-section">
             <div class="product-grid">

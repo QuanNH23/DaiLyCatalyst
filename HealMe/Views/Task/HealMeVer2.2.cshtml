@@ -14,10 +14,31 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet" />
 </head>
 <body>
+    <header>
+        <nav class="container">
+            <div>
+
+                <a style="text-decoration:none; color:none" href="/Home">
+                    <div class="logo">
+                        Daily Catalyst
+
+                    </div>
+                </a>
+
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/Task">Nhiệm vụ của bạn</a></li>
+                <li><a href="/Home/BuyNow">Mua ngay</a></li>
+                <li><a href="/Home/Feedback">Cảm nhận của mọi người</a></li>
+                <li><a href="/Authentication/Login">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
     @if(Model != null)
     {
         <div class="container">
-            <div class="header">
+            <div class="headerr">
                 <h1>Bắt đầu hành động ngay nào!</h1>
             </div>
 

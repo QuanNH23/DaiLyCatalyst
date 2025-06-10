@@ -11,7 +11,62 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px 0px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        position: relative;
+    }
+
+        .nav-links a:hover {
+            transform: translateY(-2px);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #ffd700;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }   
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -22,20 +77,20 @@ body {
     overflow: hidden;
 }
 
-.header {
+.headerr {
     background: linear-gradient(135deg, #54d0a3 0%, #9dd04a 100%);
     color: white;
     padding: 30px;
     text-align: center;
 }
 
-    .header h1 {
+    .headerr h1 {
         font-size: 32px;
         font-weight: 600;
         margin-bottom: 10px;
     }
 
-    .header p {
+    .headerr p {
         font-size: 16px;
         opacity: 0.9;
     }

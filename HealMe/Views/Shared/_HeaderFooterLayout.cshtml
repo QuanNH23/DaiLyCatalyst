@@ -1,0 +1,93 @@
+﻿
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mỗi Lá Bài Là Một Cú Hích Tới Ước Mơ</title>
+    <link rel="stylesheet" href="~/css/HealMeVer2 - HomePage.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div>
+
+                <div class="logo">
+                    Daily Catalyst
+
+                </div>
+
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="/Task">Nhiệm vụ của bạn</a></li>
+                <li><a href="/Home/BuyNow">Mua ngay</a></li>
+                <li><a href="/Home/Feedback">Cảm nhận của mọi người</a></li>
+                <li><a href="/Authentication/Login">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       @RenderBody()
+        <!-- Footer -->
+        <footer id="contact">
+            <div class="container">
+                <p>&copy; 2025 Bộ Bài Động Lực. Hãy biến ước mơ thành hiện thực! ✨</p>
+            </div>
+        </footer>
+    </main>
+
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header background change on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(255, 255, 255, 0.2)';
+            } else {
+                header.style.background = 'rgba(255, 255, 255, 0.1)';
+            }
+        });
+
+        // Card hover effects
+        document.querySelectorAll('.sample-card').forEach(card => {
+            card.addEventListener('mouseenter', function () {
+                this.style.transform = 'scale(1.05) rotateY(10deg)';
+            });
+
+            card.addEventListener('mouseleave', function () {
+                this.style.transform = 'scale(1) rotateY(0deg)';
+            });
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animation = 'fadeInUp 0.8s ease forwards';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .sample-card, .testimonial').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

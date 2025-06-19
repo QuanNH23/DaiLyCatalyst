@@ -25,7 +25,17 @@
                 <li><a href="/Task">Nhiệm vụ của bạn</a></li>
                 <li><a href="/Home/BuyNow">Mua ngay</a></li>
                 <li><a href="/Home/Feedback">Cảm nhận của mọi người</a></li>
-                <li><a href="/Authentication/Login">Đăng nhập</a></li>
+                @{
+                    var userId = Context.Session.GetString("UserId");
+                    if (!string.IsNullOrEmpty(userId))
+                    {
+                        <li><a href="/Authentication/Logout">Đăng xuất</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Authentication/Login">Đăng nhập</a></li>
+                    }
+                }
             </ul>
         </nav>
     </header>

@@ -15,6 +15,12 @@ namespace HealMe.Controllers
         {
             return View();
         }
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("UserId");
+            return RedirectToAction("Login");
+        }
         [HttpPost]
         public async Task<IActionResult> Login(string username, string password)
         {

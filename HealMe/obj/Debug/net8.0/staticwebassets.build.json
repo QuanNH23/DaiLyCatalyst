@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rnq8uiHjuGyZrMik+llN4/PD+IRk4Nf/VzKa0/nBUS0=",
+  "Hash": "UYV/C+JLv/TNHn1BNs7Pe/Me8N7e7x9aPjHzV/9XfWY=",
   "Source": "HealMe",
   "BasePath": "_content/HealMe",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\images\\2.png",
+      "SourceId": "HealMe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\",
+      "BasePath": "_content/HealMe",
+      "RelativePath": "images/2.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\2.png"
     },
     {
       "Identity": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\images\\482926956_467129603056584_8737807978588415567_n (1)-Photoroom.png",

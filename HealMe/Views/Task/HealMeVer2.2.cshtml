@@ -31,6 +31,7 @@
                 <li><a href="/Task">Nhiệm vụ của bạn</a></li>
                 <li><a href="/Home/BuyNow">Mua ngay</a></li>
                 <li><a href="/Home/Feedback">Cảm nhận của mọi người</a></li>
+                <li><a href="/Home/Comunity">Cộng đồng</a></li>
                 <li><a href="/Authentication/Login">Đăng nhập</a></li>
             </ul>
         </nav>
@@ -45,13 +46,13 @@
             <div class="tabs">
                 <button class="tab-btn active" onclick="switchTab('add-task', event)" role="tab" aria-selected="true" aria-controls="add-task">➕ Thêm Việc</button>
                 <button class="tab-btn" onclick="switchTab('all-tasks', event)" role="tab" aria-selected="false" aria-controls="all-tasks">📋 Tất Cả</button>
-                <button class="tab-btn" onclick="switchTab('completed', event)" role="tab" aria-selected="false" aria-controls="completed">🎉 Đã Hoàn Thành</button>
+                <button class="tab-btn" onclick="switchTab('completed', event)" role="tab" aria-selected="false" aria-controls="completed">🎉 Nhật Kí Mỗi Ngày</button>
             </div>
 
             <!-- Tab Thêm Việc -->
             <div class="tab-content active" id="add-task">
                 <div class="add-task-form">
-                    <h2 style="margin-bottom: 20px; color: #333;">Thêm Công Việc Mới</h2>
+                    <h2 style="margin-bottom: 20px; color: #333;">Nhật kí hôm nay</h2>
                     <form id="taskForm" asp-action="CreateTask" method="post" enctype="multipart/form-data" asp-controller="Task">
                         <input type="text" name="userId" hidden value="@Model.UserId">
                         <div class="form-group">
@@ -83,7 +84,7 @@
 
             <!-- Tab Tất Cả Việc -->
             <div class="tab-content" id="all-tasks">
-                <h2 style="color: #333; text-align: center; margin-bottom: 20px;">Danh Sách Công Việc</h2>
+                <h2 style="color: #333; text-align: center; margin-bottom: 20px;">Danh Sách Đã Thêm</h2>
                 
                     <div class="tasks-grid" id="allTasksGrid">
                         <!-- Hardcoded sample tasks -->
@@ -99,8 +100,13 @@
                                     📅 @t.CreatedAt.ToString("dd/MM/yyyy")
                                 </div>
                                 <div class="task-actions">
-                                    <button class="@(t.Completed ? "btn btn-success btn-small" : "btn btn-unsuccess btn-small")">
-                                        @(t.Completed ? "Hoàn thành" : "Chưa hoàn thành")</button>
+                                     <select 
+                                            class="status-select @(t.Completed ? "completed" : "pending")"
+                                            onchange="updateTaskStatus(@t.TaskId, this.value, event)"
+                                            data-original-value="@(t.Completed.ToString().ToLower())">
+                                        <option value="false" selected="@(!t.Completed)">Chưa hoàn thành</option>
+                                        <option value="true" selected="@(t.Completed)">Đã hoàn thành</option>
+                                    </select>
                                 </div>
                             </div>
                         }
@@ -293,6 +299,41 @@
             }
         });
 
+
+        // Hàm cập nhật trạng thái task
+        async function updateTaskStatus(taskId, newStatus) {
+            try {
+                const isCompleted = (newStatus === "true");
+                const response = await fetch('@Url.Action("UpdateTaskStatus", "Task")', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]')?.value || ''
+                    },
+                    body: JSON.stringify({
+                        taskId: taskId,
+                        status: isCompleted
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    // Reload trang để cập nhật số liệu
+                    setTimeout(() => {
+                        window.location.reload();
+                    }, 1500);
+
+                } else {
+                    throw new Error(result.message || 'Cập nhật thất bại');
+                }
+
+            } catch (error) {
+
+                // Reset lại select về trạng thái cũ
+                event.target.value = event.target.getAttribute('data-original-value') || 'false';
+            }
+        }
         
     </script>
 </body>

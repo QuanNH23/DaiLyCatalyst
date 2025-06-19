@@ -12,6 +12,7 @@ namespace HealMe.Services
         public Task<List<Models.Task>> GetTasksCompletedByUserId(int userId);
         public Task<int> GetTaskCountCompletedByUserId(int userId);
         public Task<int> GetTaskCountUnCompletedByUserId(int userId);
+        Task<TaskPagedResult> GetAllTasksAsync(int page, int pageSize, long? userId, bool? completed);
 
         public Task<List<AdminTaskDTO>> GetAdminTask();
     }
@@ -131,6 +132,17 @@ namespace HealMe.Services
             }catch (Exception ex)
             {
                 throw new Exception("Đã xảy ra lỗi khi lấy danh sách nhiệm vụ quản trị. Vui lòng thử lại sau.", ex);
+            }
+        }
+
+        public async Task<TaskPagedResult> GetAllTasksAsync(int page, int pageSize, long? userId, bool? completed)
+        {
+            try
+            {
+                return await _taskDAO.GetAllTasksAsync(page, pageSize, userId, completed);
+            }catch (Exception ex)
+            {
+                throw;
             }
         }
     }

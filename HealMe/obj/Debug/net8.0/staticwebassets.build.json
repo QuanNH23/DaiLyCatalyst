@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gGFZXouDBhiAhRGxhnJJIxt+bYEq+JE+xg395p8g8qo=",
+  "Hash": "rnq8uiHjuGyZrMik+llN4/PD+IRk4Nf/VzKa0/nBUS0=",
   "Source": "HealMe",
   "BasePath": "_content/HealMe",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\HealMeVer2 - Buy.css"
+    },
+    {
+      "Identity": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\css\\HealMeVer2 - Comunity.css",
+      "SourceId": "HealMe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\",
+      "BasePath": "_content/HealMe",
+      "RelativePath": "css/HealMeVer2 - Comunity.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\HealMeVer2 - Comunity.css"
     },
     {
       "Identity": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\css\\HealMeVer2 - Feedbacks.css",
@@ -452,6 +471,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\MeoTichCuc.png"
+    },
+    {
+      "Identity": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\images\\Qr.png",
+      "SourceId": "HealMe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\",
+      "BasePath": "_content/HealMe",
+      "RelativePath": "images/Qr.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Qr.png"
     },
     {
       "Identity": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\images\\quyetTam.png",
@@ -1706,6 +1744,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\feedbacks\\d3f1e6cd-5d9c-45bc-9f53-43712a40d68b.png"
+    },
+    {
+      "Identity": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\uploads\\feedbacks\\d476a915-78f7-4610-84a9-01efdf08b490.png",
+      "SourceId": "HealMe",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\",
+      "BasePath": "_content/HealMe",
+      "RelativePath": "uploads/feedbacks/d476a915-78f7-4610-84a9-01efdf08b490.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\feedbacks\\d476a915-78f7-4610-84a9-01efdf08b490.png"
     }
   ]
 }

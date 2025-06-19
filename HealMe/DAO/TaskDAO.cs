@@ -1,4 +1,5 @@
-﻿using HealMe.Models;
+﻿using HealMe.DTO;
+using HealMe.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace HealMe.DAO
@@ -12,6 +13,7 @@ namespace HealMe.DAO
         public Task<List<Models.Task>> GetTasksCompletedByUserId(int userId);
         public Task<Int32> GetTaskCountCompletedByUserId(int userId);
         public Task<Int32> GetTaskCountUnCompletedByUserId(int userId);
+        Task<TaskPagedResult> GetAllTasksAsync(int page, int pageSize, long? userId, bool? completed);
 
     }
     public class TaskDAO : ITaskDAO
@@ -34,6 +36,64 @@ namespace HealMe.DAO
                 throw new Exception("Đã xảy ra lỗi khi tạo nhiệm vụ. Vui lòng thử lại sau.", ex);
             }
         }
+
+        public async Task<TaskPagedResult> GetAllTasksAsync(int page, int pageSize, long? userId, bool? completed)
+        {
+            try
+            {
+                var query = _context.Tasks.AsQueryable();
+
+                if (userId.HasValue)
+                {
+                    query = query.Where(t => t.UserId == userId.Value);
+                }
+
+                if (completed.HasValue)
+                {
+                    query = query.Where(t => t.Completed == completed.Value);
+                }
+
+                var totalCount = await query.CountAsync();
+                var totalPages = (int)Math.Ceiling((double)totalCount / pageSize);
+                var skip = (page - 1) * pageSize;
+
+                var tasks = await query
+                    .OrderByDescending(t => t.CreatedAt)
+                    .Skip(skip)
+                    .Take(pageSize)
+                    .Include(t => t.User)
+                    .Select(t => new TaskDto
+                    {
+                        TaskId = t.TaskId,
+                        UserId = t.UserId,
+                        Title = t.Title,
+                        Note = t.Note,
+                        ImageUrl = t.ImageUrl,
+                        Completed = t.Completed,
+                        CreatedAt = t.CreatedAt,
+                        CompletedAt = t.CompletedAt,
+                        UserName = t.User.Username
+                    })
+                    .ToListAsync();
+
+                return new TaskPagedResult
+                {
+                    Tasks = tasks,
+                    CurrentPage = page,
+                    PageSize = pageSize,
+                    TotalCount = totalCount,
+                    TotalPages = totalPages,
+                    HasPrevious = page > 1,
+                    HasNext = page < totalPages
+                };
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Đã xảy ra lỗi khi lấy danh sách nhiệm vụ. Vui lòng thử lại sau.", ex);
+            }
+           
+        }
+    
 
         public async Task<Models.Task> GetTaskByIdAsync(int taskId)
         {

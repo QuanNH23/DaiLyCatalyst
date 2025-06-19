@@ -22,6 +22,10 @@ namespace HealMe.Controllers
         {
             return View("~/Views/BuyPageHealMe.cshtml");
         }
+        public IActionResult Comunity()
+        {
+            return View("~/Views/Community.cshtml");
+        }
 
         public IActionResult Index()
         {

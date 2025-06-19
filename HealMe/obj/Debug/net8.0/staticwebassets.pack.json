@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\HealMeVer2 - Buy.css"
     },
     {
+      "Id": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\css\\HealMeVer2 - Comunity.css",
+      "PackagePath": "staticwebassets\\css\\HealMeVer2 - Comunity.css"
+    },
+    {
       "Id": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\css\\HealMeVer2 - Feedbacks.css",
       "PackagePath": "staticwebassets\\css\\HealMeVer2 - Feedbacks.css"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\images\\MeoTichCuc.png",
       "PackagePath": "staticwebassets\\images\\MeoTichCuc.png"
+    },
+    {
+      "Id": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\images\\Qr.png",
+      "PackagePath": "staticwebassets\\images\\Qr.png"
     },
     {
       "Id": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\images\\danGiay.png",
@@ -351,6 +359,10 @@
     {
       "Id": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\uploads\\feedbacks\\d3f1e6cd-5d9c-45bc-9f53-43712a40d68b.png",
       "PackagePath": "staticwebassets\\uploads\\feedbacks\\d3f1e6cd-5d9c-45bc-9f53-43712a40d68b.png"
+    },
+    {
+      "Id": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\uploads\\feedbacks\\d476a915-78f7-4610-84a9-01efdf08b490.png",
+      "PackagePath": "staticwebassets\\uploads\\feedbacks\\d476a915-78f7-4610-84a9-01efdf08b490.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HealMe.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|c:\\users\\thanh\\desktop\\dailycatalyst.git\\healme\\views\\feedbacks\\healmefeedbackver2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\healme\\wwwroot\\css\\healmever2 - buy.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\wwwroot\\css\\healmever2 - buy.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|c:\\users\\thanh\\desktop\\dailycatalyst.git\\healme\\views\\buypagehealme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\buypagehealme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\healme\\views\\feedbacks\\healmefeedbackver2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\feedbacks\\healmefeedbackver2.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -15,14 +23,6 @@
       "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\task\\taskadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\healme\\views\\buypagehealme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\buypagehealme.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|c:\\users\\thanh\\desktop\\dailycatalyst.git\\healme\\views\\community.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\community.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\healme\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\views\\home\\homepage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -31,12 +31,8 @@
       "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\wwwroot\\css\\healmever2 - homepage.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|c:\\users\\thanh\\desktop\\dailycatalyst.git\\healme\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\healme\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\healme\\wwwroot\\css\\healmever2 - comunity.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{31310830-A170-4CF5-B2A8-64B4CAF70B34}|HealMe\\HealMe.csproj|solutionrelative:healme\\wwwroot\\css\\healmever2 - comunity.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,28 +47,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HealMeFeedbackVer2.cshtml",
-              "DocumentMoniker": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
-              "RelativeDocumentMoniker": "HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
-              "ToolTip": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
-              "RelativeToolTip": "HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAwwCQAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T18:31:52.244Z",
+              "Title": "HealMeVer2 - Buy.css",
+              "DocumentMoniker": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\css\\HealMeVer2 - Buy.css",
+              "RelativeDocumentMoniker": "HealMe\\wwwroot\\css\\HealMeVer2 - Buy.css",
+              "ToolTip": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\css\\HealMeVer2 - Buy.css",
+              "RelativeToolTip": "HealMe\\wwwroot\\css\\HealMeVer2 - Buy.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgCAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-06-20T06:35:44.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "BuyPageHealMe.cshtml",
               "DocumentMoniker": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\BuyPageHealMe.cshtml",
               "RelativeDocumentMoniker": "HealMe\\Views\\BuyPageHealMe.cshtml",
               "ToolTip": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\BuyPageHealMe.cshtml",
               "RelativeToolTip": "HealMe\\Views\\BuyPageHealMe.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACUAAAARAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-06-19T17:37:56.813Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HealMeFeedbackVer2.cshtml",
+              "DocumentMoniker": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
+              "RelativeDocumentMoniker": "HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
+              "ToolTip": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
+              "RelativeToolTip": "HealMe\\Views\\FeedBacks\\HealMeFeedbackVer2.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-19T18:31:52.244Z"
             },
             {
               "$type": "Document",
@@ -84,8 +92,7 @@
               "RelativeToolTip": "HealMe\\wwwroot\\css\\HealMeVer2 - HomePage.css",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-19T17:23:54.531Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T17:23:54.531Z"
             },
             {
               "$type": "Document",
@@ -97,12 +104,11 @@
               "RelativeToolTip": "HealMe\\Views\\Home\\HomePage.cshtml",
               "ViewState": "AQIAABUAAAAAAAAAAAAAACkAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T17:22:15.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T17:22:15.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "HealMeVer2.2.cshtml",
               "DocumentMoniker": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\Task\\HealMeVer2.2.cshtml",
               "RelativeDocumentMoniker": "HealMe\\Views\\Task\\HealMeVer2.2.cshtml",
@@ -110,12 +116,11 @@
               "RelativeToolTip": "HealMe\\Views\\Task\\HealMeVer2.2.cshtml",
               "ViewState": "AQIAABMAAAAAAAAAAAAuwCwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T17:20:41.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T17:20:41.275Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TaskAdmin.cshtml",
               "DocumentMoniker": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\Task\\TaskAdmin.cshtml",
               "RelativeDocumentMoniker": "HealMe\\Views\\Task\\TaskAdmin.cshtml",
@@ -123,21 +128,7 @@
               "RelativeToolTip": "HealMe\\Views\\Task\\TaskAdmin.cshtml",
               "ViewState": "AQIAABEAAAAAAAAAAAAuwCoAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T17:20:44.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Community.cshtml",
-              "DocumentMoniker": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\Community.cshtml",
-              "RelativeDocumentMoniker": "HealMe\\Views\\Community.cshtml",
-              "ToolTip": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\Views\\Community.cshtml",
-              "RelativeToolTip": "HealMe\\Views\\Community.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAACUAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-19T17:21:31.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-19T17:20:44.547Z"
             },
             {
               "$type": "Document",
@@ -149,20 +140,7 @@
               "RelativeToolTip": "HealMe\\Controllers\\AuthenticationController.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAmwBoAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T18:19:55.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "HealMeVer2 - Comunity.css",
-              "DocumentMoniker": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\css\\HealMeVer2 - Comunity.css",
-              "RelativeDocumentMoniker": "HealMe\\wwwroot\\css\\HealMeVer2 - Comunity.css",
-              "ToolTip": "C:\\Users\\Thanh\\Desktop\\DaiLyCatalyst.git\\HealMe\\wwwroot\\css\\HealMeVer2 - Comunity.css",
-              "RelativeToolTip": "HealMe\\wwwroot\\css\\HealMeVer2 - Comunity.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-06-19T17:23:27.141Z"
+              "WhenOpened": "2025-06-19T18:19:55.097Z"
             }
           ]
         }
